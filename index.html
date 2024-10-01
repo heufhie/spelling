@@ -1,28 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-GB">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>spelling test</title>
+    <title>Spelling Test</title>
+    <style>
+        button {
+            font-size: 6em;
+            font-weight: bold;
+            padding: 15px;
+            background-color: red;
+            border-radius: 5px;
+            margin: 10px;
+        }
+        .back-btn {
+            font-size: 2em;
+            padding: 10px;
+            background-color: blue;
+            color: white;
+            border-radius: 5px;
+        }
+    </style>
 </head>
-<style>
-    h1 {
-        font-size: 3em;
-        font-family: sans-serif;
-    }
-</style>
 <body>
-    <h1>
-        illegal<br>
-        impatient<br>
-        illegible<br>
-        imperfect<br>
-        immature<br>
-        irregular<br>
-        immortal<br>
-        irrelevant<br>
-        impossible<br>
-        irresponsible<br>
-    </h1>
+    <button id="week5">Week 5</button>
+    <button id="week6">Week 6</button>
+    <button id="week7">Week 7</button>
+
+    <script>
+        const week5 = document.getElementById("week5");
+        const week6 = document.getElementById("week6");
+        const week7 = document.getElementById("week7");
+
+        function showMainPage() {
+            document.body.innerHTML = `
+                <button id="week5">Week 5</button>
+                <button id="week6">Week 6</button>
+                <button id="week7">Week 7</button>
+            `;
+
+            document.getElementById("week5").onclick = week5.onclick;
+            document.getElementById("week6").onclick = week6.onclick;
+            document.getElementById("week7").onclick = week7.onclick;
+        }
+
+        week5.onclick = function() {
+            document.body.innerHTML = `
+                <style>
+                    #Week5 {
+                        font-weight: bold;
+                    }
+                    h1 {
+                        font-size: 2em;
+                        font-family: sans-serif;
+                    }
+                </style>
+                <h1 id="Week5"><u>Week 5</u></h1>
+                <h1>submarine</h1>
+                <h1>subdivide</h1>
+                <h1>subject</h1>
+                <h1>substandard</h1>
+                <h1>subway</h1>
+                <h1>submerge</h1>
+                <h1>subtitle</h1>
+                <h1>subtropical</h1>
+                <h1>submit</h1>
+                <h3>They all start with 'sub'.</h3>
+                <button class="back-btn" id="back">Back</button>
+            `;
+            document.getElementById("back").onclick = showMainPage;
+        }
+
+        week6.onclick = function() {
+            document.body.innerHTML = `
+                <style>
+                    #Week6 {
+                         font-weight: bold;
+                    }
+                    h1 {
+                        font-size: 2em;
+                        font-family: sans-serif;
+                    }
+                </style>
+                <h1 id="Week6"><u>Week 6</u></h1>
+                <h1>interact</h1>
+                <h1>intercity</h1>
+                <h1>international</h1>
+                <h1>interfere</h1>
+                <h1>interview</h1>
+                <h1>intercept</h1>
+                <h1>intercom</h1>
+                <h1>internet</h1>
+                <h1>interchange</h1>
+                <h1>interface</h1>
+                <h3>They all start with 'inter'.</h3>
+                <button class="back-btn" id="back">Back</button>
+            `;
+            document.getElementById("back").onclick = showMainPage;
+        }
+
+        week7.onclick = function() {
+            document.body.innerHTML = `
+                <style>
+                    #Week7 {
+                        font-weight: bold;
+                    }
+                    h1 {
+                        font-size: 2em;
+                        font-family: sans-serif;
+                    }
+                </style>
+                <h1 id="Week7"><u>Week 7</u></h1>
+                <h1>strength</h1>
+                <h1>opposite</h1>
+                <h1>women</h1>
+                <h1>believe</h1>
+                <h1>interest</h1>
+                <h1>calendar</h1>
+                <h1>grammar</h1>
+                <h1>straight</h1>
+                <h1>appear</h1>
+                <h1>increase</h1>
+                <button class="back-btn" id="back">Back</button>
+            `;
+            document.getElementById("back").onclick = showMainPage;
+        }
+    </script>
 </body>
 </html>
